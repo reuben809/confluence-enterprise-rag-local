@@ -1,0 +1,8 @@
+# Use the base image with all dependencies installed
+FROM python-rag-base:latest
+
+# Expose the Streamlit port
+EXPOSE 8501
+
+# Command to run the Streamlit application
+CMD ["streamlit", "run", "src/main_ui.py", "--server.address", "0.0.0.0", "--server.port", "8501"]

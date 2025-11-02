@@ -1,0 +1,5 @@
+# Use the base image with all dependencies installed
+FROM python-rag-base:latest
+
+# Command to run the ingestion script
+CMD ["python", "src/run_ingestion.py"]
